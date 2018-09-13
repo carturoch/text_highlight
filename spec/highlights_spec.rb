@@ -23,10 +23,6 @@ describe 'highlights' do
       expect(highlight('abcdefg', %w[ab fg])).to eq '<b>ab</b>cde<b>fg</b>'
     end
 
-    it 'wraps multiple tokens within the string' do
-      expect(highlight('abcdefg', %w[ab fg])).to eq '<b>ab</b>cde<b>fg</b>'
-    end
-
     it 'does not confuses the string with used wrap tag' do
       expect(highlight('bab', ['b'])).to eq '<b>b</b>a<b>b</b>'
     end
