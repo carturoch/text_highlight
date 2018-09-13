@@ -1,0 +1,5 @@
+.vscode/
+.bundle/
+.rspec
+bin/
+Gemfile.lock
